@@ -45,4 +45,6 @@ Playwright sería una buena elección cuando se necesite el mismo flujo en vario
 
 ## CI y evidencia
 
-El workflow `Cypress E2E` conserva videos y capturas cuando se ejecuta en GitHub Actions. En una entrega pública, agregue al README el enlace del repositorio y el enlace de la ejecución exitosa; el proyecto está preparado para ambos enlaces.
+El repositorio público es: https://github.com/greyesf1-ops/reto-cafeteria-cypress
+
+El workflow `Cypress E2E` conserva videos y capturas cuando se ejecuta en GitHub Actions. Las ejecuciones se consultan desde la pestaña Actions del repositorio.

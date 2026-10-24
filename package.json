@@ -1,0 +1,23 @@
+{
+  "name": "reto-cafeteria-cypress",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "start:test": "cross-env NODE_ENV=test node server.js",
+    "dev": "node --watch server.js",
+    "cy:run": "cypress run --browser electron",
+    "cy:open": "cypress open",
+    "test:e2e": "start-server-and-test start:test http://localhost:4173 cy:run"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "cypress": "^13.17.0",
+    "cross-env": "^7.0.3",
+    "start-server-and-test": "^2.0.11",
+    "typescript": "^5.7.2"
+  }
+}

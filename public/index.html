@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Brújula | Pedidos</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar"><a class="brand" href="/"><span class="brand-mark">☕</span><span>Café Brújula</span></a><span class="status-pill"><span class="status-dot"></span> Cocina conectada</span></header>
+    <main class="shell">
+      <section class="hero"><div><p class="eyebrow">PEDIDOS SIN PRISA</p><h1>Un buen café empieza<br /><em>con una buena elección.</em></h1><p class="hero-copy">Arma tu pedido con productos preparados hoy y confirma cuando esté listo.</p></div><div class="hero-note"><span>☼</span><strong>Hecho para tu pausa</strong><small>Disponible para recoger</small></div></section>
+      <div id="global-message" class="message" role="status" aria-live="polite" hidden></div>
+      <div class="layout">
+        <section><div class="section-heading"><div><p class="eyebrow">NUESTRA CARTA</p><h2>Elige tus favoritos</h2></div><span id="product-count" class="muted"></span></div><div id="products" class="product-grid" aria-label="Productos disponibles"></div></section>
+        <aside class="order-card" aria-label="Pedido en curso"><div class="order-heading"><div><p class="eyebrow">TU PEDIDO</p><h2>Para llevar</h2></div><span id="cart-count" class="count-badge">0</span></div><div id="cart-items" class="cart-items"><div class="empty-cart"><span>✦</span><p>Tu pedido está vacío</p><small>Agrega algo rico para comenzar.</small></div></div><div class="summary"><div><span>Subtotal</span><strong id="cart-total">Q 0.00</strong></div><button id="confirm-order" class="primary" data-cy="confirm-order">Confirmar pedido <span>→</span></button><p class="secure-note">▣ Pago al recoger · Sin registro requerido</p></div></aside>
+      </div>
+      <section id="success-panel" class="success-panel" hidden><div class="success-icon">✓</div><div><p class="eyebrow">PEDIDO CONFIRMADO</p><h2>Tu pausa ya está en marcha.</h2><p>Pedido <strong id="order-id"></strong> · Total <strong id="order-total"></strong></p></div><button id="new-order" class="secondary">Crear otro pedido</button></section>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

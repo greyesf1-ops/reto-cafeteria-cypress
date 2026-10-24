@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "id": "espresso",
+      "name": "Espresso de la casa",
+      "description": "Café corto, intenso y recién molido.",
+      "price": 18,
+      "stock": 11,
+      "category": "Café"
+    },
+    {
+      "id": "capuccino",
+      "name": "Capuchino canela",
+      "description": "Espresso, leche vaporizada y canela.",
+      "price": 32,
+      "stock": 8,
+      "category": "Café"
+    },
+    {
+      "id": "croissant",
+      "name": "Croissant de mantequilla",
+      "description": "Horneado cada mañana, crujiente por fuera.",
+      "price": 24,
+      "stock": 9,
+      "category": "Panadería"
+    },
+    {
+      "id": "cheesecake",
+      "name": "Cheesecake de frutos rojos",
+      "description": "Porción cremosa con coulis de temporada.",
+      "price": 42,
+      "stock": 5,
+      "category": "Postre"
+    }
+  ],
+  "orders": [
+    {
+      "id": "CAF-64871019",
+      "createdAt": "2026-10-20T02:54:31.019Z",
+      "items": [
+        {
+          "productId": "espresso",
+          "name": "Espresso de la casa",
+          "quantity": 1,
+          "unitPrice": 18,
+          "subtotal": 18
+        },
+        {
+          "productId": "croissant",
+          "name": "Croissant de mantequilla",
+          "quantity": 1,
+          "unitPrice": 24,
+          "subtotal": 24
+        }
+      ],
+      "total": 42,
+      "status": "Confirmado"
+    }
+  ]
+}
